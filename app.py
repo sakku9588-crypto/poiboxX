@@ -7,7 +7,7 @@ from flask import Flask, request, jsonify
 app = Flask(__name__)
 
 # 【プロ仕様】RenderのEnvironment設定（X_CONSUMER_SECRET）から読み込むにゃ！
-# これでGitHubに公開してもSakkuの秘密の鍵はバレない（売り物クオリティ）にゃ。
+# これでGitHubに公開してもSakkuの秘密の鍵はバレない（売り物クオリティ）にゃ！
 CONSUMER_SECRET = os.environ.get("X_CONSUMER_SECRET", "")
 
 @app.route('/webhook', methods=['GET'])
