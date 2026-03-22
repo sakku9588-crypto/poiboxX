@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 # 【重要】RenderのEnvironment設定で 'X_CONSUMER_SECRET' という名前で鍵を保存してにゃ！
 # コードに直接書かないことで、GitHubに上げても安全（売り物クオリティ）になるにゃ。
-CONSUMER_SECRET = os.environ.get("X_CONSUMER_SECRET", "")
+CONSUMER_SECRET ="e5jY9wuvJvFj3cCkLoxQSSk9ks3MHlrkiGrwtnswCafhoa5otI"
 
 @app.route('/webhook', methods=['GET'])
 def webhook_challenge():
